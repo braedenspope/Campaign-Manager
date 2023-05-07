@@ -1,5 +1,6 @@
 import java.util.*;
 
+// Stores information about a D&D character.
 public class Character {
     String name;
     String characterClass;
@@ -11,6 +12,7 @@ public class Character {
     int wisdom;
     int charisma;
 
+    // Prompts the user for information about the Character.
     public Character() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("What is the name of the Character? ");
@@ -31,5 +33,25 @@ public class Character {
         wisdom = scanner.nextInt();
         System.out.println("What is the Charisma score of the Character? ");
         charisma = scanner.nextInt();
+    }
+
+    // Non-default constructor to populate variables with an array from a FileReader.
+    public Character(String[] data) {
+        name = data[0];
+        characterClass = data[1];
+        subclass = data[2];
+        strength = Integer.parseInt(data[3]);
+        dexterity = Integer.parseInt(data[4]);
+        constitution = Integer.parseInt(data[5]);
+        intelligence = Integer.parseInt(data[6]);
+        wisdom = Integer.parseInt(data[7]);
+        charisma = Integer.parseInt(data[8]);
+    }
+
+    // Generates a string of all Character information.
+    public String getFileString() {
+        String fileString = String.join(",", name, characterClass, subclass, Integer.toString(strength), Integer.toString(dexterity), Integer.toString(constitution), Integer.toString(intelligence), Integer.toString(wisdom), Integer.toString(charisma));
+        return fileString; 
+        
     }
 }
