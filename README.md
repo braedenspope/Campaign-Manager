@@ -17,6 +17,6 @@ I used Visual Studio Code to develop this software, and I wrote the program in t
 
 # Future Work
 
-- Item 1 Add File Reading/Writing Functionality
-- Item 2 Extend the amount of information that can be included
-- Item 3 Additional editing options for Campaigns and the Characters within
+- Add File Reading/Writing Functionality
+- Extend the amount of information that can be included
+- Additional editing options for Campaigns and the Characters within
