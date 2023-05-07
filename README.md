@@ -12,11 +12,11 @@ I used Visual Studio Code to develop this software, and I wrote the program in t
 
 # Useful Websites
 
-- [Web Site Name](http://w3schools.com)
-- [Web Site Name](http://geeksforgeeks.org)
+- [w3Schools](http://w3schools.com)
+- [Geeks For Geeks](http://geeksforgeeks.org)
 
 # Future Work
 
-- Item 1 
-- Item 2
-- Item 3
+- Item 1 Add File Reading/Writing Functionality
+- Item 2 Extend the amount of information that can be included
+- Item 3 Additional editing options for Campaigns and the Characters within
