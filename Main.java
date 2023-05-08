@@ -9,7 +9,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Campaign campaign = new Campaign();
         
-        while (choice != 7) {
+        while (choice != 8) {
             displayMenu();
             if (campaign.campaignName == null) {
                 System.out.println("\nNo Campaign Loaded.");
@@ -23,13 +23,15 @@ public class Main {
             } else if (choice == 2) {
                 campaign.display();
             } else if (choice == 3) {
+                campaign.displayCharacter();
+            } else if (choice == 4) {
                 Character hero = new Character();
                 campaign.addCharacter(hero);
-            } else if (choice == 4) {
-                campaign.removeCharacter();
             } else if (choice == 5) {
-                saveCampaign(campaign);
+                campaign.removeCharacter();
             } else if (choice == 6) {
+                saveCampaign(campaign);
+            } else if (choice == 7) {
                 campaign = loadCampaign();
             }
         }
@@ -84,10 +86,11 @@ public class Main {
         
         System.out.println("1. Create Campaign");
         System.out.println("2. Display Campaign");
-        System.out.println("3. Add a Character");
-        System.out.println("4. Remove a Character");
-        System.out.println("5. Save a Campaign");
-        System.out.println("6. Load a Campaign");
-        System.out.println("7. Quit");
+        System.out.println("3. Display a Character");
+        System.out.println("4. Add a Character");
+        System.out.println("5. Remove a Character");
+        System.out.println("6. Save a Campaign");
+        System.out.println("7. Load a Campaign");
+        System.out.println("8. Quit");
     }
 }

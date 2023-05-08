@@ -4,7 +4,7 @@ This Program is used for storing basic campaign and character information for Du
 
 I created this software to help Dungeon Masters (DMs) like myself keep track of the difference characters within the several campaigns I'm a part of.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Campaign Manager Demo](https://youtu.be/qqBYxRDwgI8)
 
 # Development Environment
 

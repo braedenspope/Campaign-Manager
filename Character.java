@@ -48,6 +48,20 @@ public class Character {
         charisma = Integer.parseInt(data[8]);
     }
 
+    public void display() {
+        System.out.println("\nName: " + name);
+        System.out.println("Class: " + characterClass);
+        System.out.println("Subclass: " + subclass);
+        System.out.println("Strength: " + strength);
+        System.out.println("Dexterity: " + dexterity);
+        System.out.println("Constitution: " + constitution);
+        System.out.println("Intelligence: " + intelligence);
+        System.out.println("Wisdom: " + wisdom);
+        System.out.println("Charisma: " + charisma);
+        System.out.println("\n");
+
+    }
+
     // Generates a string of all Character information.
     public String getFileString() {
         String fileString = String.join(",", name, characterClass, subclass, Integer.toString(strength), Integer.toString(dexterity), Integer.toString(constitution), Integer.toString(intelligence), Integer.toString(wisdom), Integer.toString(charisma));

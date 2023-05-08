@@ -23,6 +23,17 @@ public class Campaign {
         
     }
 
+    public void displayCharacter() {
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 1; i <= characters.size(); i++) {
+            Character hero = characters.get(i-1);
+            System.out.println(i + ". " + hero.name + " (" + hero.characterClass + ")");
+        }
+        System.out.print("Which Character would you like to view? ");
+        int choice = scanner.nextInt() - 1;
+        characters.get(choice).display();
+    }
+
     // Adds a Character to the Campaign's list.
     public void addCharacter(Character hero) {
         characters.add(hero);
